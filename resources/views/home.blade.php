@@ -1,16 +1,48 @@
 @extends('layouts.main')
 @section('container')
     
+
+
 <main class="px-3">
-  <h1>Cover your page.</h1>
-  <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
-  <p class="lead">
-    <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a>
-  </p>
+  <h2 class="mb-3 text-center">Beranda</h2>
+  <div class="card mb-3"> 
+    <img src="https://source.unsplash.com/1200x400/?pencil" alt="pencil" class="img-fluid">
+    <div class="card-body text-center">
+      <h3 class="card-title"><a href="/" class="text-decoration-none text-dark">judul</a></h3>
+      <p>
+        <small>
+          By: <a href="/" class="text-decoration-none">nana</a> in <a href="/" class="text-decoration-none">kategori</a> dibuat 2 menit yg lalu
+        </small>
+      </p>
+      <p class="card-text">excerpt</p>
+      <a href="/" class="text-decoration-none btn btn-primary">Baca selengkapnya</a>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <div class="card"> 
+            <img src="https://source.unsplash.com/500x400/?pencil" class="card-img-top" alt="pencil">
+          <div class="card-body">
+            <h5 class="card-title">judul</h5>
+            <p>
+              <small>
+                Oleh: <a href="/" class="text-decoration-none">penulis.. </a> dibuat 2 menit yg lalu
+              </small>
+            </p>
+            <p class="card-text">excerpt</p>
+            <a href="/" class="btn btn-primary">Baca selengkapnya</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </main>
 
 <footer class="mt-auto text-white-50">
-  <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
+  <p></p>
 </footer>
-
 @endsection
+
+
+
