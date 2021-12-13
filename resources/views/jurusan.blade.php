@@ -1,6 +1,9 @@
 @extends('layouts.main')
 @section('container')
-  <h2 class="pb-2 border-bottom">Kompetensi Keahlian</h2>
+
+  <h2 class="mb-5 text-center">Kompetensi Keahlian</h2>
+
+  <h3 class="pb-2 border-bottom">Teknologi Komputer dan Jaringan</h3>
   <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
     <div class="feature col">
       <div class="feature-icon bg-primary bg-gradient">
@@ -36,4 +39,5 @@
       </a>
     </div>
   </div>
+
 @endsection

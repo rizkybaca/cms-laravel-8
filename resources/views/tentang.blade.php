@@ -1,6 +1,6 @@
 @extends('layouts.main')
 @section('container')
-  <h2 class="mb-3 text-center">Tentang</h2>
+  <h2 class="mb-5 text-center">Tentang</h2>
   <div class="accordion" id="accordionExample">
     <div class="accordion-item">
       <h2 class="accordion-header" id="headingOne">

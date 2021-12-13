@@ -43,7 +43,7 @@
     <link href="/css/headers.css" rel="stylesheet">
     <link href="/css/features.css" rel="stylesheet">
   </head>
-  <body class="d-flex h-100 text-center">
+  <body class="d-flex h-100">
     
 <div class="container d-flex p-3 mx-auto flex-column">
   @include('partials.navbar')
