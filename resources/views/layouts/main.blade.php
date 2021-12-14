@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.88.1">
-    <title>CMS nich</title>
+    <title>{{ $title }}</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/cover/">
 
@@ -42,6 +42,7 @@
     <link href="/css/cover.css" rel="stylesheet">
     <link href="/css/headers.css" rel="stylesheet">
     <link href="/css/features.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
   </head>
   <body class="d-flex h-100">
     

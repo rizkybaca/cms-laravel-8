@@ -1,5 +1,6 @@
 @extends('layouts.main')
 @section('container')
+<main class="px-3">
   <h2 class="mb-5 text-center">Tentang</h2>
   <div class="accordion" id="accordionExample">
     <div class="accordion-item">
@@ -27,4 +28,5 @@
       </div>
     </div>
   </div>
+</main>
 @endsection

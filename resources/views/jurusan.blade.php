@@ -1,6 +1,7 @@
 @extends('layouts.main')
 @section('container')
 
+<main class="px-3">
   <h2 class="mb-5 text-center">Kompetensi Keahlian</h2>
 
   <h3 class="pb-2 border-bottom">Teknologi Komputer dan Jaringan</h3>
@@ -39,5 +40,5 @@
       </a>
     </div>
   </div>
-
+</main>
 @endsection

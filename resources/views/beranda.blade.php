@@ -6,7 +6,7 @@
   <h2 class="mb-5 text-center">{{ $title }}</h2>
 
   @if ($posts->count())
-    <div class="card mb-3"> 
+    <div class="card mb-5"> 
       @if ($posts[0]->image)
         <div style="max-height: 400px; overflow:hidden;">   
           <img src="{{ asset('storage/' . $posts[0]->image) }}" alt="{{ $posts[0]->category->name }}" class="img-fluid">
@@ -46,7 +46,7 @@
                   </small>
                 </p>
                 <p class="card-text">{{ $post->excerpt }}</p>
-                <a href="/posts/{{ $post->slug }}" class="btn btn-primary">Read more</a>
+                <a href="/posts/{{ $post->slug }}" class="btn btn-primary">Baca selengkapnya</a>
               </div>
             </div>
           </div>
@@ -54,7 +54,7 @@
       </div>
     </div>
 
-  </main>
+
       
   @else
     <p class="text-center fs-4">No post found.</p>
@@ -63,10 +63,8 @@
   
   {{ $posts->links() }}
 
-</div>
-  <footer class="mt-auto d-flex justify-content-center text-50">
-    <p>Ini footer</p>
-  </footer>
+  </div>
+  </main>
 @endsection
 
 

@@ -23,7 +23,7 @@ class PostController extends Controller
         return view('beranda', [
             'title' => 'Beranda' . $title,
             'active' => 'beranda',
-            'posts' => Post::latest()->filter(request(['search', 'category', 'author']))->paginate(7)->withQueryString()
+            'posts' => Post::latest()->filter(request(['search', 'category', 'author']))->paginate(4)->withQueryString()
         ]);
     }
 
