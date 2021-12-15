@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\LoginController;
-use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\DashboardPostController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,10 +28,6 @@ Route::get('/login', [LoginController::class, 'index'])->name('login')->middlewa
 Route::post('/login', [LoginController::class, 'authenticate']);
 Route::post('/logout', [LoginController::class, 'logout']);
 
-Route::get('/dashboard', function () {
-    return view('dashboard.index');
-})->middleware('auth');
-
 
 Route::get('/jurusan', function () {
     return view('jurusan', [
@@ -46,3 +42,11 @@ Route::get('/tentang', function () {
         'title' => 'Tentang'
     ]);
 });
+
+Route::get('/dashboard/posts/checkSlug', [DashboardPostController::class, 'checkSlug'])->middleware('auth');
+
+Route::get('/dashboard', function () {
+    return view('dashboard.index');
+})->middleware('auth');
+
+Route::resource('/dashboard/posts', DashboardPostController::class)->middleware('auth');

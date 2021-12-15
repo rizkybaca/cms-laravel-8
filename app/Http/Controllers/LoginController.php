@@ -10,14 +10,13 @@ class LoginController extends Controller
     public function index()
     {
         return view('login.index', [
-            'title' => 'login',
-            'active' => 'login',
+            'title' => 'Login',
         ]);
     }
     public function authenticate(Request $request)
     {
         $credentials = $request->validate([
-            'email' => ['required', 'email:dns'],
+            'email' => ['required', 'email'],
             'password' => ['required'],
         ]);
 
@@ -34,6 +33,6 @@ class LoginController extends Controller
         Auth::logout();
         $request->session()->invalidate();
         $request->session()->regenerate();
-        return redirect('/');
+        return redirect('/login');
     }
 }
